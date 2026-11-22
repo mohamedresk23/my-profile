@@ -51,7 +51,7 @@
   }
 
   /* ---------- State ---------- */
-  var lang = store.get("lang") || ((navigator.language || "").toLowerCase().indexOf("ar") === 0 ? "ar" : "en");
+  var lang = store.get("lang") || "en";
   if (!P[lang]) lang = "en";
   var t = P[lang];
   var filter = "all";

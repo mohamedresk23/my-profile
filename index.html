@@ -1,23 +1,23 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mohamed Al-Shahat — Frontend Tech Lead</title>
   <meta name="description" content="Frontend Tech Lead building e-commerce storefronts and web apps with React, Next.js, Twig and Liquid.">
-  <meta name="theme-color" content="#F4F1EA">
-  <link rel="icon" href="assets/favicon.svg?v=4" type="image/svg+xml">
+  <meta name="theme-color" content="#121110">
+  <link rel="icon" href="assets/favicon.svg?v=5" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link rel="stylesheet" href="assets/css/style.css?v=5">
   <script>
     (function () {
       var d = document.documentElement;
       d.classList.add('js');
+      // Defaults: English + dark. A visitor's own saved choice wins.
       try {
-        var th = localStorage.getItem('theme');
-        if (th === 'light' || th === 'dark') d.setAttribute('data-theme', th);
+        if (localStorage.getItem('theme') === 'light') d.setAttribute('data-theme', 'light');
         var lg = localStorage.getItem('lang');
         if (lg === 'ar') { d.lang = 'ar'; d.dir = 'rtl'; }
       } catch (e) {}
@@ -44,7 +44,7 @@
 
   <div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
 
-  <script src="assets/js/data.js?v=4"></script>
-  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/data.js?v=5"></script>
+  <script src="assets/js/main.js?v=5"></script>
 </body>
 </html>

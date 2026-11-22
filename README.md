@@ -8,7 +8,7 @@ A bilingual (English / العربية) single-page portfolio with light and dark
 
 - **Hero**: an animated code editor types a product-grid template (Twig, Liquid or JSX), then a demo storefront "renders" from it. The add-to-cart buttons work.
 - **About**, **Experience** (the timeline line draws as you scroll), **Skills**, **Projects** (filter by technology, with animated reordering) and **Contact** (copy email to clipboard).
-- Arabic is a full RTL layout, not a mirrored afterthought. The language and theme choices are remembered.
+- Opens in English and dark mode by default. Arabic is a full RTL layout, not a mirrored afterthought. A visitor's language and theme choices are remembered.
 - Respects `prefers-reduced-motion`: every animation has a static fallback.
 
 ## Run locally
