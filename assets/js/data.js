@@ -9,7 +9,7 @@ window.PROFILE = {
     phone: "+201227670995",
     phoneDisplay: "+20 122 767 0995",
     github: "https://github.com/mohamedresk23",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/mohammed-resk-ba9b63216"
   },
 
   // Used to compute "years building for the web" automatically.
