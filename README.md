@@ -2,6 +2,8 @@
 
 Personal portfolio of **Mohamed Al-Shahat Abdul-Aziz** — Frontend Tech Lead (React & Next.js).
 
+**Live:** https://mohamedresk23.github.io/my-profile/
+
 A bilingual (English / العربية) single-page portfolio with light and dark themes, built with plain HTML, CSS and JavaScript. It has no build step and no dependencies.
 
 ## What's inside
@@ -42,6 +44,6 @@ assets/
 
 ## Deploy
 
-Works on any static host (GitHub Pages, Netlify, Vercel). GitHub Pages for a **private** repository requires a paid GitHub plan; otherwise, make the repo public or deploy with Netlify/Vercel.
+Hosted on GitHub Pages from the `main` branch (root folder). Every push to `main` redeploys the site automatically. After editing CSS or JS, bump the `?v=` number on the asset links in `index.html` so returning visitors get the new files.
 
 Icons: [Lucide](https://lucide.dev) (ISC license), inlined as SVG.
