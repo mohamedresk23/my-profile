@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamed Al-Shahat — Frontend Tech Lead</title>
+  <meta name="description" content="Frontend Tech Lead building e-commerce storefronts and web apps with React, Next.js, Twig and Liquid.">
+  <meta name="theme-color" content="#F4F1EA">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var th = localStorage.getItem('theme');
+        if (th === 'light' || th === 'dark') d.setAttribute('data-theme', th);
+        var lg = localStorage.getItem('lang');
+        if (lg === 'ar') { d.lang = 'ar'; d.dir = 'rtl'; }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-nav" id="nav-root"></header>
+
+  <main id="main" tabindex="-1">
+    <noscript>
+      <div class="container noscript">
+        <h1>Mohamed Al-Shahat Abdul-Aziz</h1>
+        <p>Frontend Tech Lead | React &amp; Next.js Developer — Mansoura, Egypt.</p>
+        <p>Please enable JavaScript to view the full portfolio.</p>
+      </div>
+    </noscript>
+  </main>
+
+  <footer class="site-footer" id="footer-root"></footer>
+
+  <div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
