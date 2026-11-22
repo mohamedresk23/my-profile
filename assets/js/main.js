@@ -137,7 +137,7 @@
     var dark = currentTheme() === "dark";
     return (
       '<div class="container nav-inner">' +
-      '<a class="brand" href="#top" aria-label="' + esc(t.footer.name) + '"><span class="brace">{</span>' + (lang === "ar" ? "الشحات" : "alshahat") + '<span class="brace">}</span></a>' +
+      '<a class="brand" href="#top" dir="ltr" aria-label="' + esc(t.footer.name) + '"><span class="tag tag-open" aria-hidden="true">&lt;</span><span class="brand-name">mohamed</span><span class="tag tag-close" aria-hidden="true"><span class="slash">/</span>&gt;</span></a>' +
       '<nav class="nav-links" id="nav-menu" aria-label="Primary"><ul>' + links + '</ul><span class="nav-indicator" aria-hidden="true"></span></nav>' +
       '<div class="nav-actions">' +
       '<button class="icon-btn lang-btn" type="button" data-action="lang" aria-label="' + esc(t.ui.langLabel) + '" lang="' + (lang === "ar" ? "en" : "ar") + '">' + esc(t.ui.langSwitch) + "</button>" +

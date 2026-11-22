@@ -163,16 +163,17 @@ h1, h2, h3, p { margin: 0; }
 }
 .site-nav.is-hidden { transform: translateY(-100%); }
 .nav-inner { display: flex; align-items: center; gap: 24px; }
+/* Logo: a self-closing component tag, <mohamed />. Never mirrored in RTL. */
 .brand {
   font-family: var(--font-mono); font-weight: 500; font-size: 17px; letter-spacing: -.01em;
-  display: inline-flex; align-items: center; gap: 2px; padding: 6px 2px;
+  display: inline-flex; align-items: center; padding: 6px 2px; direction: ltr; unicode-bidi: isolate;
 }
-:root[lang="ar"] .brand { font-family: var(--font-body); font-weight: 700; }
-.brand .brace { color: var(--accent); font-family: var(--font-mono); transition: transform .35s var(--ease-out); }
-.brand:hover .brace:first-child { transform: translateX(-4px); }
-.brand:hover .brace:last-child { transform: translateX(4px); }
-:root[dir="rtl"] .brand:hover .brace:first-child { transform: translateX(4px); }
-:root[dir="rtl"] .brand:hover .brace:last-child { transform: translateX(-4px); }
+.brand-name { font-weight: 600; margin-inline: 3px 6px; }
+.brand .tag { color: var(--accent); display: inline-flex; transition: transform .35s var(--ease-out); }
+.brand .slash { display: inline-block; transition: transform .45s var(--ease-out); }
+.brand:hover .tag-open { transform: translateX(-4px); }
+.brand:hover .tag-close { transform: translateX(4px); }
+.brand:hover .slash { transform: rotate(-20deg); }
 
 .nav-links { position: relative; margin-inline-start: auto; }
 .nav-links ul { display: flex; gap: 4px; }
